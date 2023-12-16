@@ -1,0 +1,318 @@
+/* START HOME SECTION */
+#home{
+	background-image: url(../assets/img/hero-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#home .bg-color{
+	opacity: 0.90;
+}
+#home .layer .f-ul>li a{
+	position: relative;
+}
+#home .layer .f-ul>li a::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 12px;
+	width: 0px;
+	height: 3px;
+	background-color: #0062d3;
+	visibility: hidden;
+	transition: all 0.5s ease;
+}
+#home .layer .f-ul>li:hover a::before {
+	visibility: visible;
+	width: 40px;
+}
+#home .layer nav .f-ul :nth-child(6):hover ::before{
+	visibility: hidden;
+}
+#home .layer nav .f-ul :nth-child(6):hover .sub-ul{
+	display: block;
+	visibility: visible;
+}
+#home .layer nav .f-ul :nth-child(6) .sub-ul li a:hover{
+	color: #0062d3 ;
+}
+#home .layer nav .f-ul :nth-child(6) .sub-ul :nth-child(2) .btn-sub:hover{
+	color: #0062d3 !important;
+}
+#home nav .dropdown .show-hide{
+	position: absolute;
+	background-color: white;
+	right:162px;
+	top:0;
+	list-style-type: none;
+	padding-left: 0;
+	display: none;
+}
+@media screen and (min-width:500px) and (max-width:992px) {
+	#home nav .dropdown .show-hide{
+		left: 10px;
+		width: 100%;
+	}
+}
+#home nav .dropdown :nth-child(2) :nth-child(2):hover .show-hide{
+	display: block;
+}
+#home nav .dropdown .show-hide li{
+	padding: 10px 22px 10px 5px;
+}
+#home .header-txt{
+	translate: (50%,50%);
+}
+#home .layer .header-txt h1{
+  font-size: 72px;
+	margin-top: 18%;
+}
+#home .layer .header-txt p{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+@media screen and (min-width:500px) and (max-width:992px) {
+	#home .header-txt {
+	position: relative;
+	top:120px;
+	}
+	#home .layer .header-txt h1{
+		font-size: 50px;
+	}
+	#home .layer .header-txt p{
+		font-size: 30px;
+	}
+}
+/* body:has(#home:target) li a[href="#home"]::before,
+body:has(#about:target) li a[href="#about"]::before,
+body:has(#services:target) li a[href="#services"]::before,
+body:has(#portfolio:target) li a[href="#portfolio"]::before,
+body:has(#blog:target) li a[href="#blog"]::before,
+body:has(#contact:target) li a[href="#contact"]::before
+{
+	width: 40px;
+	visibility: visible;
+} */
+/* END HOME SECTION */
+
+/* START ABOUT SECTION */
+#about .container .row .skills>div {
+	background-color: #cde1f8;
+}
+#about .container .row .skills .progress-bar {
+	background-color: #0078ff;
+}
+#about .container .row .skills .one .progress-bar {
+	width: 85%;
+}
+#about .container .row .skills .two .progress-bar {
+	width: 75%;
+}
+#about .container .row .skills .three .progress-bar {
+	width: 50%;
+}
+#about .container .row .skills .four .progress-bar {
+	width: 90%;
+}
+#about .details>h5{
+	position: relative;
+}
+#about .container .row .details h5::after{
+	content: "";
+	position: absolute;
+	top:75px;
+	left: 0;
+	width: 20%;
+	height: 3px;
+	background-color: #0D6EFD;
+}
+/* END ABOUT SECTION */
+
+/* START SERVICES SECTION */
+#services .line{
+	width:50px;
+	height:5px;
+	background-color: #0078ff;
+	margin: auto;
+	margin-bottom: 50px;
+}
+#services .card .icon i{
+	border:10px solid #0078ff;
+	border-radius:50%;
+	font-size: 40px;
+}
+#services .card:hover i{
+	color: white;
+	background-color: #0078ff;
+	box-shadow: 0 0 0 10px #cfe2ff;
+}
+/* END SERVICES SECTION */
+
+/* START COUNTER SECTION */
+#counter{
+	background-image: url(../assets/img/post-3.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#counter .layer{
+	opacity: 0.7;
+}
+#counter .container .brdr i {
+	border: 10px solid white;
+	border-radius: 50%;
+	font-size: 35px;
+	color: white;
+}
+/* END COUNTER SECTION */
+
+/* START portfolio SECTION */
+#portfolio .line {
+	width: 50px;
+	height: 5px;
+	background-color: #0078ff;
+	margin: auto;
+	margin-bottom: 50px;
+}
+#portfolio .card img{
+	transition: all 0.5s ease;
+}
+#portfolio .card:hover img{
+	transform: scale(1.2);
+	cursor: pointer;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+/* END PORTFOLIO SECTION */
+
+/* START TESTIMONIAL SECTION */
+#testimonial{
+	background-image: url(../assets/img/overlay-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#testimonial .layer .carousel-sec .carousel-inner .carousel-item img{
+width: 150px ;
+}
+.carousel-indicators [data-bs-target]{
+	width:10px;
+	height: 10px;
+}
+#testimonial .d-none{
+	display: block !important;
+}
+/* END TESTIMONIAL SECTION */
+
+/* START BLOG SECTION */
+#blog .blog-txt .line {
+	width: 50px;
+	height: 5px;
+	background-color: #0078ff;
+	margin: auto;
+	margin-bottom: 50px;
+}
+#blog .card-body{
+	position: relative;
+}
+#blog .card-1::after{
+	content: "Travel";
+	position: absolute;
+	left:50%;
+	top:-15px;
+	width:90px;
+	height: 30px;
+	background-color: #0078ff;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	transform: translateX(-50%);
+}
+#blog .card-2::after {
+	content: "web design";
+	position: absolute;
+	left: 50%;
+	top: -15px;
+	width: 100px;
+	height: 30px;
+	background-color: #0078ff;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	transform: translateX(-50%);
+	text-transform: capitalize;
+	font-size: 14px;
+	padding-top: 3px;
+}
+#blog .blog-card .card .card-foot .card-foot-one img{
+	width: 40px;
+	border-radius: 50%;
+}
+@media screen and (min-width:768px) and (max-width:993px) {
+	#blog .blog-card .card .card-foot{
+		flex-wrap: wrap;
+	}
+	#blog .blog-card .card .card-foot .card-foot-two{
+		margin: auto;
+	}
+}
+/* END BLOG SECTION */
+
+/* START CONTACT SECTION  */
+#contact{
+	background-image: url(../assets/img/overlay-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#contact .layer .row h5{
+	position: relative;
+	font-size: 30px;
+}
+#contact .layer .row h5::after{
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 20%;
+	height: 3px;
+	background-color: #0D6EFD;
+}
+#contact .layer .message-box form button{
+	width:40%;
+	font-size: 14px;
+	margin: auto;
+}
+@media screen and (min-width:350px) and (max-width:800px) {
+	#contact .layer .message-box form button{
+		width:50%
+	}
+}
+#contact .layer .message-box form button:hover{
+	color: white !important;
+	background-color: #0078ff;
+	box-shadow: 0 0 0 10px #cfe2ff;
+}
+#contact .layer ul:last-child li:hover i{
+	color: white !important;
+
+	background-color: #0078ff;
+	box-shadow: 0 0 0 10px #cfe2ff;
+}
+/* END CONTACT SECTION */
+/* START FOOTER SECTION */
+#footer{
+	background-color: #0062d3;
+}
+#footer a.fx-bo{
+	bottom:10px;
+	right: 10px;
+}
+body:has(#home:target) #footer a.fx-bo {
+	visibility: hidden;
+}
+/* END FOOTER SECTION */
+
